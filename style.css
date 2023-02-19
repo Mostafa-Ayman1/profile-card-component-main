@@ -40,7 +40,7 @@ section {
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
     margin-bottom: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 8px 5px 24px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 24px;
 }
 
 .head {
@@ -98,7 +98,9 @@ ul li {
     text-align: center;
 }
 
-ul li h3 {
+ul li div {
+    font-weight: bold;
+    font-size: 1.1em;
     color: var(--Very-dark-desaturated-blue);
 }
 
