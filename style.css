@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    /* outline: 2px solid rgb(47, 0, 255); */
+    /* background-color: rgba(172, 255, 47, 0.1);*/
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("images/bg-pattern-bottom.svg"), url("images/bg-pattern-top.svg");
+    background-position: left 50vw top 50vh, right 50vw bottom 50vh;
+    background-repeat: no-repeat;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+section {
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 8px 5px 24px;
+}
+
+.head {
+    background-image: url("images/bg-pattern-card.svg");
+    padding: 73px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+    margin-bottom: -40px;
+}
+
+.image img {
+    border-radius: 50%;
+    border: 5px solid white;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.text h1 {
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 1.2em;
+}
+
+.text h1>span {
+    color: var(--Dark-gray);
+    font-weight: 300;
+    padding-left: 0.25em;
+}
+
+.text .loction {
+    margin-top: 0.25em;
+    font-size: 0.95em;
+    color: var(--Dark-gray);
+}
+
+ul {
+    border-top: 1px solid hsl(0, 0%, 59%, 0.5);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5em 0;
+}
+
+ul li {
+    text-align: center;
+}
+
+ul li h3 {
+    color: var(--Very-dark-desaturated-blue);
+}
+
+ul li span {
+    font-size: 0.8em;
+    color: var(--Dark-gray);
+}
+
+footer {
+    color: white;
+}
+
+footer a {
+    font-weight: bold;
+    color: var(--Very-dark-desaturated-blue);
+    text-decoration: none;
+}
